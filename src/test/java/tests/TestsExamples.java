@@ -28,6 +28,6 @@ public void test_1() {
 		  then().
 		   statusCode(200).
 		   body("data[1].id", equalTo(8)).
-		   log().all(); 
+		   log().all();
 	}
 }
