@@ -11,7 +11,7 @@ public class TestsExamples {
 public void test_1() {
 		Response response = RestAssured.get("https://reqres.in/api/users?page=2");
 		System.out.println("status code = " + response.getStatusCode());
-		Assert.assertEquals(response.getStatusCode(), 201);
+		Assert.assertEquals(response.getStatusCode(), 200);
 		System.out.println("response time = " + response.getTime());
 		System.out.println("response body: ... " + response.getBody().asPrettyString());
 		System.out.println("status line: " + response.getStatusLine());
